@@ -89,12 +89,12 @@ const Navbar = () => {
                 {favorites.length > 0 ? (
                   <ul>
                     {favorites.map(item => {
-                      const { id, type, name, location } = item;
+                      const { id, type, name } = item;
                       return (
                         <li className='utils__favorites-list-item fav' key={id}>
                           <Link to={`/${type}/${id}`}>
                             <h2>{name}</h2>
-                            <p>{location}</p>
+                            <p>{type}</p>
                           </Link>
                         </li>
                       );

@@ -97,8 +97,10 @@ nav {
         position: absolute;
         top: 5.5rem;
         right: 0;
-        z-index: 10;
+        z-index: 30;
         width: 20rem;
+        max-height: 30rem;
+        overflow-y: auto;
 
         background-color: #f0f0f0;
         box-shadow: 0 0.8rem 5rem 2rem rgba(0, 0, 0, 0.1);
@@ -106,6 +108,11 @@ nav {
 
         ul {
           list-style: none;
+
+          p {
+            margin-top: 0.3rem;
+            text-transform: capitalize;
+          }
         }
 
         &-item {
