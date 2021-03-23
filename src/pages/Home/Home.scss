@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.home-page {
+  margin-top: 10rem;
+  padding-top: 0.2rem;
+  padding-bottom: 8rem;
+  background-color: #f8f8f0;
+
+  &__main {
+    display: block;
+    margin: 0 auto;
+    max-width: $max-width;
+    width: 90vw;
+  }
+}

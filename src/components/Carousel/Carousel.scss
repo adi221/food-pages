@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.carousel {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  width: 100%;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    a {
+      cursor: pointer;
+      font-size: 1.6rem;
+      border-radius: 1rem;
+      padding: 0.7rem 1.1rem;
+      background-color: #f8f8f8;
+    }
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    gap: 2.5rem 0.5rem;
+  }
+}

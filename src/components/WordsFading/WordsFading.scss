@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.fading-words {
+  font-weight: 600;
+  width: 20rem;
+  padding-bottom: 0.2rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  transition: all 0.3s ease-out;
+
+  & span {
+    text-align: center;
+    width: 100%;
+  }
+}

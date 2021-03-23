@@ -1,0 +1,35 @@
+@import './styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Space+Mono:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.page {
+  margin-top: 10rem;
+  min-height: 65vh;
+  background-color: #f8f8f8;
+}

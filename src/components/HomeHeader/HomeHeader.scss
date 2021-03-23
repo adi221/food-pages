@@ -1,0 +1,112 @@
+@import '../../styles/variables';
+
+.home-header {
+  margin: 0 auto;
+  height: 70vh;
+  max-width: $max-width;
+  width: 90vw;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10rem auto;
+    min-height: 60rem;
+  }
+  img {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    border-radius: 2rem;
+    width: 70rem;
+  }
+  &__square {
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    width: 70rem;
+    border-radius: 2rem;
+    background-color: $clr-blue-light;
+    height: 50rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 100px 80px rgba(0, 0, 0, 0.1);
+    max-width: 90vw;
+  }
+  &__search-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-width: 50rem;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    background: linear-gradient(135deg, #c3d4e0, #8e9397);
+    border-radius: 2rem;
+    padding: 7rem 5rem;
+    z-index: 20;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 100px 80px rgba(0, 0, 0, 0.1);
+
+    div {
+      font-size: 2.7rem;
+      margin-bottom: 2.5rem;
+      color: #fff;
+      letter-spacing: 0.4rem;
+      display: inline-block;
+      font-weight: 700;
+    }
+
+    .form {
+      width: 100%;
+      border-radius: 4rem;
+      padding: 1.8rem 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $clr-white;
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        outline: none;
+        svg {
+          color: $clr-blue;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .home-header {
+    &__main {
+      img {
+        display: none;
+      }
+    }
+    &__square {
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    &__search-wrapper {
+      top: 40%;
+      left: 50%;
+      max-width: 90%;
+      min-width: 25rem;
+      padding: 7rem 5rem;
+    }
+  }
+}

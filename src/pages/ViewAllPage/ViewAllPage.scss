@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.view-all-page {
+  min-height: 80vh;
+  background-color: #f8f8f8;
+  padding-top: 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3.2rem;
+    text-transform: capitalize;
+  }
+  h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    align-self: center;
+  }
+
+  &__main {
+    max-width: $max-width;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    gap: 1.2rem 1.5rem;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+footer {
+  background-color: #fff;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.2);
+  padding: 6rem 0;
+
+  .footer-center {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: $max-width;
+    width: 90vw;
+    margin: 0 auto;
+
+    & > * {
+      margin: 2.2rem 0.5rem;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+      font-family: 'Space Mono', monospace;
+      color: $clr-blue;
+      width: 25rem;
+      align-self: baseline;
+    }
+
+    &__queue {
+      display: flex;
+      flex-direction: column;
+      width: 25rem;
+
+      h3 {
+        font-size: 2.5rem;
+        color: #000;
+        margin-bottom: 2.2rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}

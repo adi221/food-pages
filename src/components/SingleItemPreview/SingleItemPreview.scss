@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.single-item-preview {
+  background: $gradient-blue;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  // margin: 1rem;
+  padding: 2rem;
+  min-width: 20rem;
+  height: 16rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #fff;
+
+  h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0 2.6rem 0;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  button {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      color: #fff;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      transition: $transition;
+    }
+  }
+}
