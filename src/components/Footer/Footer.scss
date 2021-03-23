@@ -8,15 +8,16 @@ footer {
   .footer-center {
     display: flex;
     justify-content: space-around;
-
+    margin: 0 auto;
     align-items: center;
+    justify-items: center;
     flex-wrap: wrap;
     max-width: $max-width;
-    width: 90vw;
-    margin: 0 auto;
+    width: 92%;
 
     & > * {
       margin: 2.2rem 0.5rem;
+      padding: 0 2rem;
     }
 
     &__title {
